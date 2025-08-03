@@ -23,6 +23,18 @@ html, body {
   text-align: center;
 }
 
+/* Custom container max width override for large screens */
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .custom-header h2, .custom-header p {
   max-width: 90%;
   word-wrap: break-word;
@@ -150,6 +162,7 @@ option {
 .distance-label {
   display: inline-block;
 }
+
 .form-content {
   padding-left: 1rem;
   padding-right: 1rem;
